@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+    <title>Kurdish Films</title>
+    <link rel="icon" type="https://www.linkpicture.com/q/movie-icon-26.png" href="https://www.linkpicture.com/q/movie-icon-26.png">
+
+</head>
+<style>
+    @import url('./responsive/extrasmall.css');
+</style>
+
+<body>
+
+
+    <div class="content">
+
+        <nav class="navbar navbar-expand-lg navbar-light  ">
+            <div class="logo">
+
+                <img src="https://www.linkpicture.com/q/video-recorder-12-674528.png" width="130" height="66" alt="">
+
+                <path fill-rule="evenodd" d="M0 8a2 2 0 0 1 2-2h7.5a2 2 0 0 1 1.983 1.738l3.11-1.382A1 1 0 0 1 16 7.269v7.462a1 1 0 0 1-1.406.913l-3.111-1.382A2 2 0 0 1 9.5 16H2a2 2 0 0 1-2-2V8z" />
+                <circle cx="3" cy="3" r="3" />
+                <circle cx="9" cy="3" r="3" />
+                </svg>
+                <h1>Kurdish Films</h1>
+            </div>
+            <button id="btnav" class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul id="nav" class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="./index.html"><i class="fa fa-play"></i> <span
+                                class="sr-only">(current)</span>&nbsp; Kurdish Film</a>
+                    </li>
+                    <li class="nav-item">
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <i class="fa fa-play-circle"></i> &nbsp; Lock Film
+                        </a>
+                        <div id="drop" class="dropdown-menu" aria-labelledby="navbarDropdown" style="width: 590px; height: 320px;">
+                            <div class="row row-cols-4">
+
+                                <div class="col ">
+                                    <a href="#">Aksion</a>
+                                    <a href="#">Aziatik</a>
+                                    <a href="#">Dramë</a>
+                                    <a href="#">Fantazi</a>
+                                    <a href="#">Histori</a>
+                                    <br>
+                                    <a href="#">Krim</a>
+                                    <br>
+                                    <a href="#">Kurdish Films</a>
+                                    <br>
+                                    <a href="#">Spanjoll</a>
+
+                                </div>
+                                <div class="col">
+
+                                </div>
+                            </div>
+
+                        </div>
+                    </li>
+                    <li class=" nav-item">
+                        <a class="nav-link" href="./index.html"></i>Home </a>
+                    </li>
+
+
+                </ul>
+                <div class="search-box ">
+
+                    <input id="srch" class=" form-control mr-sm-2" type="text" placeholder="Search..." aria-label="Search">
+                    <button id="btn" class="btn" type="submit" onclick="search-file" ()>
+                        <i class="fa fa-search"></i>
+                    </button>
+
+                </div>
+
+
+                <div class="btn-group dropleft">
+                    <button type="button" class="btn" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    </button>
+
+                    <div id="drop" class="dropdown-menu" style="width: 420px; height: 220px;">
+                        <ul id="show-cart">
+                            <li>???????</li>
+                        </ul>
+                        <div id="film">Film: <span id="count-cart">X</span> items in your cart</div>
+                        <div id="total">Total:$<span id="total-cart"></span></div>
+                        <button id="clear-cart">Clear Cart</button>
+                    </div>
+                </div>
+
+            </div>
+
+        </nav>
+
+        <div id="monitor">
+            <div id="in-mon">
+                <div style="text-align: center;"> <iframe allowfullscreen="1080" height="360" marginheight="0" marginwidth="0" name="myframe" scrolling="no" src="https://drive.google.com/file/d/1_AMyBafc9mSE-NjLQkA0ido5i8RA0jbl/preview" width="90%" height="360" frameborder="800"></iframe></div>
+                <div class="clr">
+                </div>
+            </div>
+        </div>
+        <div class="title">
+
+        </div>
+        <div class="cards">
+
+            <div class="card border-0">
+                <img src="https://www.linkpicture.com/q/bigsetr.jpg" alt="">
+                <div class="info">
+                    <span><i class="fa fa-star"></i>8.0</span>
+                    <a id="play" href="./Big Stan 2007.html"><i class="fa fa-play-circle"></i></a>
+                    <h4>Big Stan 2007 </h4>
+
+                    <p>Big Stan is a 2007 American prison comedy film starring, produced and directed by Rob Schneider in his directorial debut. Co-starring Marcelo Ortega, Jennifer Morrison, Scott Wilson, Henry Gibson, Richard Kind, Jackson Rathbone, M.
+                        Emmet Walsh and David Carradine, it was Gibson's final role before his death in 2009. : Kurdi
+                    </p>
+
+                    <ul>
+                        <li><a class="add-to-cart" href="#" data-name="The Doorman" data-price="14">Add to
+                                cart</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="card border-0">
+                <img src="https://www.linkpicture.com/q/images_54.jpg" alt="">
+                <div class="info">
+                    <span><i class="fa fa-star"></i>8.0</span>
+                    <a id="play" href="./3 Idiots is a.html"><i class="fa fa-play-circle"></i></a>
+                    <h4>3 Idiots is a (2009)</h4>
+                    <p>3 Idiots is a 2009 Indian Hindi-language coming-of-age comedy-drama film directed by Rajkumar Hirani, and also co-written by him with Abhijat Joshi. ... The film follows the friendship of three students at an Indian engineering college
+                        and is a satire about the social pressures under an Indian education system. : Kurd .</p>
+                </div>
+            </div>
+            <div class="card border-0">
+                <img src="https://www.linkpicture.com/q/mask_4.jpg" alt="">
+                <div class="info">
+                    <span><i class="fa fa-star"></i>8.0</span>
+                    <a id="play" href="./The Mask (1994).html"><i class="fa fa-play-circle"></i></a>
+                    <h4>The Mask (1994)</h4>
+                    <p>The film was released on July 29, 1994, by New Line Cinema, becoming a critical and commercial success. : Kurdi </p>
+
+                </div>
+            </div>
+            <div class="card border-0">
+                <img src="https://www.linkpicture.com/q/Littlemanposter.jpg" alt="">
+                <div class="info">
+                    <span><i class="fa fa-star"></i>8.0</span>
+                    <a id="play" href="./Little man (2006).html"><i class="fa fa-play-circle"></i></a>
+                    <h4>Little Man (2006) </h4>
+                    <p>A man is so eager to become a dad that he'll believe anything, including the notion that a baby-faced thief on the lam is really an abandoned toddler. : Kurdi
+                    </p>
+                    <ul>
+                    </ul>
+                </div>
+            </div>
+            <div class="card border-0">
+                <img src="https://www.linkpicture.com/q/220px-Avatar-Teaser-Poster.webp" alt="">
+                <div class="info">
+                    <span><i class="fa fa-star"></i>8.0</span>
+                    <a id="play" href="./Avatar (2009).html"><i class="fa fa-play-circle"></i></a>
+                    <h4> Avatar (2009 film)
+                    </h4>
+                    <p>The film's title refers to a genetically engineered Na'vi body operated from the brain of a remotely located human that is used to interact with the natives of Pandora. Development of Avatar began in 1994, when Cameron wrote an 80-page
+                        treatment for the film.: Kurdi
+
+
+                </div>
+            </div>
+            <div class="card border-0">
+                <img src="https://www.linkpicture.com/q/Holiday.jpg" alt="">
+                <div class="info">
+                    <span><i class="fa fa-star"></i>8.0</span>
+                    <a id="play" href="./Holiday A Soldier Is Never Off Duty (2014).html"><i class="fa fa-play-circle"></i></a>
+                    <h4>Holiday: A Soldier Is Never Off Duty (2014) </h4>
+                    <p>With worldwide earnings of over ₹1.78 billion, Holiday proved to be one of the highest-grossing Indian films of 2014. : Kurdi </p>
+                </div>
+            </div>
+            <div class="card border-0">
+                <img src="https://www.linkpicture.com/q/images_145.jpg" alt="">
+                <div class="info">
+                    <span><i class="fa fa-star"></i>8.0</span>
+                    <a id="play" href="./PK (2006).html"><i class="fa fa-play-circle"></i></a>
+                    <h4>PK (2014)</h4>
+                    <p>When a naïve alien stranded on Earth is told to pray for a way home, his search for god reveals the follies of blind faith in organized religion.</p>
+                </div>
+
+            </div>
+            <div class="card border-0">
+                <img src="https://www.linkpicture.com/q/220px-Fast_-_Furious_Presents_Hobbs_-_Shaw_-_theatrical_poster.jpg" alt="">
+                <div class="info">
+                    <span><i class="fa fa-star"></i>8.0</span>
+                    <a id="play" href="./Fast  Furious Presents Hobbs Shaw (2019).html"><i class="fa fa-play-circle"></i></a>
+                    <h4>Fast & Furious Presents: Hobbs & Shaw (2019)</h4>
+                    <p>The plot follows the unlikely pairing of the titular characters as they team up with Shaw's sister (Kirby) to battle a cybernetically-enhanced terrorist (Elba) threatening the world with a deadly virus. : Kurdi                    </p>
+
+                </div>
+
+            </div>
+            <div class="card border-0">
+                <img src="https://www.linkpicture.com/q/Click.jpg" alt="">
+                <div class="info">
+                    <span><i class="fa fa-star"></i>8.0</span>
+                    <a id="play" href="./Click (2006).html"><i class="fa fa-play-circle"></i></a>
+                    <h4>Click (2006)</h4>
+                    <p>Click is a 2006 American fantasy comedy-drama film directed by Frank Coraci, written by Steve Koren and Mark O'Keefe, and produced by Adam Sandler, who also stars in the lead role. The film co-stars Kate Beckinsale as his wife Donna
+                        and Christopher Walken as Morty, an eccentric stranger.
+
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="line"></div>
+
+        <!DOCTYPE html>
+        <html lang="en">
+
+        <head>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <link rel="stylesheet" href="./css/style.css">
+
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+            <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+            <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+            <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+            <script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+            <title>Kurdish Films</title>
+            <link rel="icon" type="https://www.linkpicture.com/q/movie-icon-26.png" href="https://www.linkpicture.com/q/movie-icon-26.png">
+
+        </head>
+        <style>
+            @import url('./responsive/extrasmall.css');
+        </style>
+
+        <body>
+
+
+            <div class="content">
+
+                <nav class="navbar navbar-expand-lg navbar-light  ">
+                    <div class="logo">
+
+
+                        <path fill-rule="evenodd" d="M0 8a2 2 0 0 1 2-2h7.5a2 2 0 0 1 1.983 1.738l3.11-1.382A1 1 0 0 1 16 7.269v7.462a1 1 0 0 1-1.406.913l-3.111-1.382A2 2 0 0 1 9.5 16H2a2 2 0 0 1-2-2V8z" />
+                        <circle cx="3" cy="3" r="3" />
+                        <circle cx="9" cy="3" r="3" />
+                        </svg>
+                    </div>
+                    <button id="btnav" class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    </button>
+
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul id="nav" class="navbar-nav mr-auto">
+
+                            <li class="nav-item">
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                </a>
+                                <div id="drop" class="dropdown-menu" aria-labelledby="navbarDropdown" style="width: 590px; height: 320px;">
+                                    <div class="row row-cols-4">
+
+                                        <div class="col ">
+                                            <a href="#">Aksion</a>
+                                            <a href="#">Aziatik</a>
+                                            <a href="#">Dramë</a>
+                                            <a href="#">Fantazi</a>
+                                            <a href="#">Histori</a>
+                                            <br>
+                                            <a href="#">Krim</a>
+                                            <br>
+                                            <br>
+                                            <a href="#">Spanjoll</a>
+
+                                        </div>
+                                        <div class="col">
+
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </li>
+                            <li class=" nav-item">
+                            </li>
+
+
+                        </ul>
+                        <div class="search-box ">
+
+
+                        </div>
+
+
+                        <div class="btn-group dropleft">
+                            <button type="button" class="btn" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            </button>
+
+                            <div id="drop" class="dropdown-menu" style="width: 420px; height: 220px;">
+                                <ul id="show-cart">
+                                    <li>???????</li>
+                                </ul>
+                                <div id="film">Film: <span id="count-cart">X</span> items in your cart</div>
+                                <div id="total">Total:$<span id="total-cart"></span></div>
+                                <button id="clear-cart">Clear Cart</button>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </nav>
+
+                <div class="title">
+
+                </div>
+                <div class="cards">
+    
+                    <div class="card border-0">
+                        <img src="https://www.linkpicture.com/q/images_146.jpg" alt="">
+                        <div class="info">
+                            <span><i class="fa fa-star"></i>8.0</span>
+                            <a id="play" href="./Housefull 3 (2016).html"><i class="fa fa-play-circle"></i></a>
+                            <h4>Housefull 3 (2016)
+                            </h4>
+    
+                            <p> Housefull 3 is a 2016 Indian Hindi-language action comedy film co-written and directed by Sajid-Farhad and produced by Sajid Nadiadwala under the banner Nadiadwala Grandson Entertainment. The film is the third installment of the
+                                Housefull franchise and is distributed by Eros International. and Jackie Shroff. The film was
+                                theatrically released in India on June 3, 2016. : Kurdi
+                            </p>
+    
+                           
+                        </div>
+                    </div>
+                    <div class="card border-0">
+                        <img src="https://www.linkpicture.com/q/Who_Finds_a_Friend_Finds_a_Treasure_-_Film_1981.jpg"" alt="">
+                        <div class="info">
+                            <span><i class="fa fa-star"></i>8.0</span>
+                            <a id="play" href="./Finds a Friend Finds a Treasure (1981).html"><i class="fa fa-play-circle"></i></a>
+                            <h4>Finds a Friend Finds a Treasure (1981)</h4>
+                            <p>Who Finds a Friend Finds a Treasure (Italian: Chi trova un amico trova un tesoro also known as A Friend Is a Treasure) is an Italian adventure-comedy movie directed in 1981 by Sergio Corbucci. It was filmed at Key Biscayne, Florida. : Kurdi
+                            </p> </div>
+                    </div>
+                    <div class="card border-0">
+                        <img src="https://www.linkpicture.com/q/KoiMilGayaFilmPoster_1.jpg" alt="">
+                        <div class="info">
+                            <span><i class="fa fa-star"></i>8.0</span>
+                            <a id="play" href="./Koi... Mil Gaya.html"><i class="fa fa-play-circle"></i></a>
+                            <h4>Koi... Mil Gaya (2003)</h4>
+                            <p>Koi... Mil Gaya (English: Found Someone) is a 2003 Indian Hindi-language sci-fi drama film directed by Rakesh Roshan and is the first installment in the Krrish franchise. The film, released on 8 August 2003, stars Hrithik Roshan and Preity Zinta alongside Rekha. Koi... Mil Gaya received the National Film Award for Best Film on Other Social Issues, and was screened at the Jerusalem Film Festival and the NatFilm Festival in Denmark. : Kurdi </p>
+    
+                        </div>
+                    </div>
+                    <div class="card border-0">
+                        <img src="https://www.linkpicture.com/q/images_150.jpg" alt="">
+                        <div class="info">
+                            <span><i class="fa fa-star"></i>9.0</span>
+                            <a id="play" href="./Baahubali The Beginning (2015).html"><i class="fa fa-play-circle"></i></a>
+                            <h4>Baahubali: The Beginning (2015) </h4>
+                            <p>Both budget and box office records have since been surpassed by Baahubali 2: The Conclusion, the second highest grossing Indian film of all time. : Kurdi
+                            </p>
+                            <ul>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="card border-0">
+                        <img src="https://www.linkpicture.com/q/images_151.jpg" alt="">
+                        <div class="info">
+                            <span><i class="fa fa-star"></i>9.0</span>
+                            <a id="play" href="./Baahubali 2 The Conclusion (2017).html"><i class="fa fa-play-circle"></i></a>
+                            <h4> Baahubali 2: The Conclusion (2017)
+                            </h4>
+                            <p>Baahubali 2: The Conclusion is a 2017 Indian epic action film directed by S. S. Rajamouli and written by his father K. V. : Kurdi
+    
+    
+                        </div>
+                    </div>
+              
+                    <div class="card border-0">
+                        <img src="https://www.linkpicture.com/q/637737_jumanji_v8_aa.jpg" alt="">
+                        <div class="info">
+                            <span><i class="fa fa-star"></i>8.0</span>
+                            <a id="play" href="./Holiday A Soldier Is Never Off Duty (2014).html"><i class="fa fa-play-circle"></i></a>
+                            <h4> Jumanji: Welcome to the Jungle (2017)                            </h4>
+                            <p>In March 2017, during CinemaCon, it was announced that the film's complete title was Jumanji: Welcome to the Jungle. Its plot involved teenagers cleaning out a school's basement who find a vintage video-game version of Jumanji and are sucked into the first film's jungle setting. : Kurdi </p>
+                        </div>
+                    </div>
+
+                    <div class="card border-0">
+                        <img src="https://www.linkpicture.com/q/images_152.jpg" alt="">
+                        <div class="info">
+                            <span><i class="fa fa-star"></i>8.0</span>
+                            <a id="play" href="./Holiday A Soldier Is Never Off Duty (2014).html"><i class="fa fa-play-circle"></i></a>
+                            <h4> Jumanji: The Next Level (2019)</h4>
+                            <p>In Jumanji: The Next Level, the gang is back but the game has changed. As they return to rescue one of their own, the players will have to brave parts unknown from arid deserts to snowy mountains, to escape the world's most dangerous game. : Kurdi </p>
+                        </div>
+                    </div>     
+                    <div class="card border-0">
+                        <img src="https://www.linkpicture.com/q/images-1_22.jpg" alt="">
+                        <div class="info">
+                            <span><i class="fa fa-star"></i>8.0</span>
+                            <a id="play" href="./Jai Ho (2014).html"><i class="fa fa-play-circle"></i></a>
+                            <h4> Jai Ho (2014)</h4>
+                            <p>Jai Ho (transl. Let there be Victory) is a 2014 Indian Hindi-language action drama film directed by Sohail Khan, who also produced the film under the banner Sohail Khan Films, and co-produced by Sunil Lulla of Eros International, which distributed the film. It stars Salman Khan, Tabu, Daisy Shah, Aditya Pancholi and Danny Denzongpa. It also features Sunil Shetty and Genelia D'Souza in cameo appearances. : Kurdi </p>
+                        </div>
+                    </div>
+                    <div class="card border-0">
+                        <img src="https://www.linkpicture.com/q/MV5BM2ExMzgxZTAtNTFhMy00YTJkLThjZDctODlhMDNmZjA4Yzc2XkEyXkFqcGdeQXVyNTkzNDQ4ODc@._V1.jpg" alt="">
+                        <div class="info">
+                            <span><i class="fa fa-star"></i>8.0</span>
+                            <a id="play" href="./Tashan (2008).html"><i class="fa fa-play-circle"></i></a>
+                            <h4> Tashan (2008)                            </h4>
+                            <p>Tashan (English: Style) is a 2008 Indian action comedy film starring Akshay Kumar, Saif Ali Khan, Kareena Kapoor and Anil Kapoor in the lead roles. Produced by Aditya Chopra and Yash Chopra of Yash Raj Films, it was released on 25 April 2008, and marked the directorial debut of Vijay Krishna Acharya. : Kurdi </p>
+                        </div>
+                    </div>
+                    
+                            </div>
+                        </div>
+                    </div>
+                </div>  
+                <div class="footer">
+                    <div class="sizewrap">
+                    <div class="left">
+                    <p>Is Website For All        <a href="https://www.......com/" title="KurdishFilm">   Kurdish Films</p> 
+                    </a>
+                    </div>
+                    </div>
+                    </div>
+            
+        </html>
+
+        </body>
